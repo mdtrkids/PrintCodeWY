@@ -34,3 +34,16 @@
 
 ตัวอ่านไฟล์: SheetJS CE 0.20.3 เก็บใน `vendor/xlsx.full.min.js` จาก [แหล่งทางการ](https://docs.sheetjs.com/docs/getting-started/installation/standalone/) ใช้ Apache-2.0
 
+
+## ติดตั้งบนมือถือ
+
+อัปโหลดไฟล์เว็บทั้งหมด รวม `manifest.webmanifest`, `pwa.js`, `sw.js` และโฟลเดอร์ `icons` ขึ้น GitHub Pages แล้วเปิด URL แบบ HTTPS
+
+- Android: เปิดด้วย Chrome แล้วกด “ติดตั้งแอป” ในเว็บเมื่อปุ่มปรากฏ หรือเลือกจากเมนูเบราว์เซอร์
+- iPhone / iPad: เปิดด้วย Safari → แชร์ → เพิ่มไปยังหน้าจอโฮม
+- หลังเปิดเว็บออนไลน์และโหลดข้อมูลแอปครบแล้ว สามารถเปิดใช้งานออฟไลน์ได้ ไฟล์ Excel ที่เลือกจะไม่ถูกเก็บในแคช และต้องเลือกไฟล์ใหม่เมื่อเปิดแอปใหม่
+- หากแก้ไขรายการไฟล์แอปในอนาคต ให้เพิ่มเลขเวอร์ชัน CACHE ใน `sw.js` ด้วย
+
+ทดสอบ manifest, ขนาดไอคอน, service worker, เส้นทางย่อยแบบ GitHub Pages และนำเข้า Excel ขณะออฟไลน์ผ่านเบราว์เซอร์แล้ว การแสดงปุ่มติดตั้งขึ้นอยู่กับเบราว์เซอร์และสถานะการติดตั้งของผู้ใช้
+
+อ้างอิง: https://developer.mozilla.org/en-US/docs/Web/Progressive_web_apps/Guides/Making_PWAs_installable

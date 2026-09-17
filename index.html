@@ -3,11 +3,19 @@
 <head>
   <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
   <title>WY · Code Export</title><link rel="stylesheet" href="styles.css">
+  <meta name="theme-color" content="#196449">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-title" content="WY Code">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="icon" type="image/png" sizes="192x192" href="icons/icon-192.png">
+  <link rel="apple-touch-icon" href="icons/apple-touch-icon.png">
+  <script defer src="pwa.js"></script>
   <script defer src="vendor/xlsx.full.min.js"></script><script defer src="core.js"></script><script defer src="app.js"></script>
 </head>
 <body>
 <header><a class="brand" href="./"><span>WY</span> CODE STUDIO</a><span class="privacy">● ประมวลผลบนเครื่องของคุณ</span></header>
 <main>
+  <aside class="install-panel" id="install-panel"><div><strong>ติดตั้ง WY Code บนมือถือ</strong><p id="install-help">เปิดเมนูเบราว์เซอร์ แล้วเลือก “ติดตั้งแอป” หรือ “เพิ่มลงในหน้าจอหลัก”</p></div><button id="install-app" hidden>ติดตั้งแอป ↓</button></aside>
   <div class="intro"><div class="eyebrow">EXCEL → CSV</div><h1>เตรียมโค้ดให้พร้อมใช้</h1><p>อัปโหลดไฟล์ ตั้งค่า Lot แล้วส่งออกโค้ดได้ในที่เดียว</p></div>
   <div class="layout"><div class="settings">
     <section class="card"><h2><span class="step">01</span> นำเข้าโค้ด</h2>
