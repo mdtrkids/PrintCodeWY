@@ -22,8 +22,8 @@
       <label>วันหมดอายุ <span class="required">*</span><input id="expiry" type="date" required><small>เริ่มต้นวันที่ 31 ธันวาคมของปีปัจจุบัน · ส่งออกเป็น DD/MM/YYYY (ค.ศ.)</small></label>
       <fieldset><legend>ใช้สำหรับ</legend><div class="choices"><label><input type="radio" name="purpose" value="ขาย" checked><span>ขาย</span></label><label><input type="radio" name="purpose" value="แจก"><span>แจก</span></label></div></fieldset>
       <label class="check"><input id="dedupe" type="checkbox"> ตัด CODE ซ้ำออก</label>
-      <label class="check"><input id="excel-mode" type="checkbox" checked aria-describedby="excel-help"> เปิดใน Excel ให้คงเลข 0</label>
-      <small id="excel-help">ใช้สูตรข้อความ เช่น ="016781" สำหรับ CODE ตัวเลข หากนำ CSV เข้าระบบอื่น ให้ปิดตัวเลือกนี้</small>
+      <label class="check"><input id="excel-mode" type="checkbox" aria-describedby="excel-help"> โหมดสำหรับเปิดใน Excel เท่านั้น</label>
+      <small id="excel-help">สำหรับ BarTender ให้ปล่อยช่องนี้ว่าง จะได้ CODE เช่น 015248 ตามต้นฉบับ หากเปิดโหมด Excel จะส่งเป็นสูตร ="015248"</small>
     </section>
   </div>
   <section class="card preview"><div class="preview-heading"><div><div class="eyebrow">PREVIEW</div><h2>ตัวอย่างข้อมูล CSV</h2></div><span class="badge" id="count">0 รายการ</span></div>
